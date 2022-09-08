@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  gap: 5px 10px;
+  grid-template-rows: 50px 40px 20px 30px;
+  grid-auto-rows: 30px 20pxs;
+  background-color: #2196F3;
+  background-size: fixed 10px 20px 100px;
+  padding: 10px;
+  margin: 30px;
+}
+
+.grid-item {
+  background-color: orange(300,300, 300,0.9);
+  text-align: center;
+  padding: 15px 30px;
+  font-size: 10px;
+  border: 1px solid white;
+}
+
+.item1 {
+  background-color: orange;
+  grid-column: 2/ span 3;
+  grid-row: 1;
+  grid-gap: 1px;
+}
+
+.item2 {
+  background-color: orange;
+  grid-column: 1;
+  grid-row: 1 / span 4;
+  grid-gap: 1px;
+  padding-top: 20%;
+}
+
+.item3 {
+  background-color: orange;
+  grid-column: 2;
+  grid-row: 2/ span 2;
+  grid-gap: 5%;
+  padding-bottom: 5%;
+
+}
+
+.item4 {
+  background-color: orange;
+  grid-column: 2;
+  grid-row:  3/ span 3;
+  grid-gap: 10 px;
+  margin-bottom: 5px;
+  padding-top: 10%;
+  padding-bottom: 2%;
+}
+
+
+.item5 {
+  background-color: red;
+  grid-column: 3/ span 3;
+  grid-row: 4;
+  grid-gap: 10 px;
+  margin-bottom: 10px;
+  padding-bottom:8px;
+  margin-left: 20%;
+  margin-right:35%;
+
+}
+</style>
+</head>
+<body>
+<frameset>
+<div class="grid-container">
+  <div class="grid-item item1">Tittle</div>
+  <div class="grid-item item2">Image</div>
+  <div class="grid-item item3">Text1</div>  
+  <div class="grid-item item4">Text2</div>
+  <div class="grid-item item5">Delete button</div>
+</div>
+</frameset>
+
+</body>
+</html>
+
+
